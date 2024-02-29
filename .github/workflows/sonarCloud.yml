@@ -88,5 +88,6 @@ jobs:
         uses: dawidd6/action-download-artifact@v3
         with:
           workflow: jest.yml
+          workflow_conclusion: in_progress
           pr: ${{ needs.getPrNumber.outputs.prNumber }}
           name: code-coverage-reports
